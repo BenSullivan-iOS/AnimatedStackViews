@@ -9,17 +9,64 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+  
+  @IBOutlet var emojis: [UIButton]! {
+    
+    didSet {
+      
+      emojis.forEach {
+        
+        $0.hidden = true
+        
+      }
+    }
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
+  @IBOutlet var horizontalEmojis: [UIButton]! {
+    
+    didSet {
+      
+      horizontalEmojis.forEach {
+        
+        return $0.hidden = true
+      }
+    }
   }
-
-
+  
+  @IBAction func happyEmojiPressed(sender: UIButton) {
+    
+    UIView.animateWithDuration(0.5) {
+      
+      self.horizontalEmojis.forEach {
+        
+        if $0.hidden {
+          
+          $0.hidden = false
+          
+        } else {
+          
+          $0.hidden = true
+        }
+      }
+    }
+  }
+  
+  @IBAction func settingsButtonTapped(sender: UIButton) {
+    
+    UIView.animateWithDuration(0.5) {
+      
+      self.emojis.forEach {
+        
+        if $0.hidden {
+          
+          $0.hidden = false
+          
+        } else {
+          
+          $0.hidden = true
+        }
+      }
+    }
+  }
 }
 
