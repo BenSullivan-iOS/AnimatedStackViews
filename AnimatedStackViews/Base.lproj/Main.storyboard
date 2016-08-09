@@ -112,11 +112,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the lolly followed by the first smiley face." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b0-Oc-tvz">
+                                <rect key="frame" x="206" y="260" width="188" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="45Z-Ym-nMD"/>
+                                    <constraint firstAttribute="width" constant="188" id="RbW-CR-ai9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2b0-Oc-tvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3uu-Ub-J39"/>
                             <constraint firstItem="0ur-fV-nSm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="DsZ-HK-4yP"/>
                             <constraint firstItem="Xeu-cj-Orp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JaI-em-qZN"/>
+                            <constraint firstItem="2b0-Oc-tvz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="amv-dA-T6d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0ur-fV-nSm" secondAttribute="trailing" id="cto-pO-MqR"/>
                             <constraint firstItem="Xeu-cj-Orp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t4R-so-eYV"/>
                             <constraint firstItem="Xeu-cj-Orp" firstAttribute="leading" secondItem="0ur-fV-nSm" secondAttribute="trailing" id="vWO-vT-1BE"/>
