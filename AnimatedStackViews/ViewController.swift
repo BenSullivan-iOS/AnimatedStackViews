@@ -10,6 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  @IBOutlet weak var stackViewWidth: NSLayoutConstraint!
+  
+  var compressed = true
+  
+  @IBAction func goAnimateButtonPressed(_ sender: UIButton) {
+    
+    UIView.animate(withDuration: 2.0,
+                               delay: 0.0,
+                               usingSpringWithDamping: 0.5,
+                               initialSpringVelocity: 4.0,
+                               options: .curveLinear,
+                               animations: { () -> Void in
+                                self.stackViewWidth.constant = (self.compressed == false) ? 100.0 : 200.0
+                                self.compressed = !self.compressed
+                                self.view.layoutIfNeeded()
+      }, completion: nil)
+  }
+  
   
   @IBOutlet var htest: [UIButton]! {
     

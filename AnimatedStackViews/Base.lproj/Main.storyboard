@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,16 +88,50 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T53-dO-fHl">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdy-GS-b93">
+                                        <color key="backgroundColor" red="0.79666516330000003" green="1" blue="0.94929942160000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="kQe-fb-j33"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXV-gI-SCr">
+                                        <color key="backgroundColor" red="1" green="0.95724973530000002" blue="0.84827256449999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M1I-CT-fJt"/>
+                                    <constraint firstAttribute="width" constant="300" id="lsI-Dz-Ya8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFo-O9-nNo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ath-pE-ohr"/>
+                                    <constraint firstAttribute="width" constant="30" id="HGA-sy-PkJ"/>
+                                </constraints>
+                                <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="goAnimateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="svo-xI-Byu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oEd-X9-9Sr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IiP-qd-yjh"/>
+                            <constraint firstItem="oEd-X9-9Sr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="IiP-qd-yjh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T53-dO-fHl" secondAttribute="trailing" constant="22" id="S3p-tV-1uX"/>
+                            <constraint firstItem="VFo-O9-nNo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="UXQ-4H-q5T"/>
+                            <constraint firstItem="T53-dO-fHl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="VXl-6u-C7p"/>
+                            <constraint firstItem="VFo-O9-nNo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z6f-1t-uur"/>
+                            <constraint firstItem="T53-dO-fHl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="cmW-ir-hwa"/>
                             <constraint firstItem="oEd-X9-9Sr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1o-vM-pCf"/>
+                            <constraint firstItem="T53-dO-fHl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lss-gZ-34S"/>
                             <constraint firstItem="Xeu-cj-Orp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nYO-ve-e3f"/>
-                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="t4R-so-eYV"/>
+                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="t4R-so-eYV"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="stackViewWidth" destination="kQe-fb-j33" id="dKC-Hq-mEX"/>
                         <outletCollection property="emojis" destination="HMw-V0-TN3" collectionClass="NSMutableArray" id="ki3-8s-2cP"/>
                         <outletCollection property="emojis" destination="Yca-Fz-chR" collectionClass="NSMutableArray" id="CR3-Vn-Wqd"/>
                         <outletCollection property="emojis" destination="dPN-FH-pe4" collectionClass="NSMutableArray" id="Pia-Eh-G0F"/>
