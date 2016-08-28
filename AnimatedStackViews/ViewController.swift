@@ -10,13 +10,40 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  
+  @IBOutlet var htest: [UIButton]! {
+    
+    didSet {
+      
+      htest.forEach {
+        
+        $0.isHidden = true
+        
+      }
+    }
+  }
+  
+  @IBAction func htestpushed(_ sender: UIButton) {
+    
+    
+    UIView.animate(withDuration: 0.5) {
+      
+      self.htest.forEach {
+        
+        $0.isHidden = !$0.isHidden
+      }
+    }
+  }
+
+  
+  
   @IBOutlet var emojis: [UIButton]! {
     
     didSet {
       
       emojis.forEach {
         
-        $0.hidden = true
+        $0.isHidden = true
         
       }
     }
@@ -28,43 +55,30 @@ class ViewController: UIViewController {
       
       horizontalEmojis.forEach {
         
-        return $0.hidden = true
+        return $0.isHidden = true
       }
     }
   }
   
-  @IBAction func happyEmojiPressed(sender: UIButton) {
+  @IBAction func happyEmojiPressed(_ sender: UIButton) {
     
-    UIView.animateWithDuration(0.5) {
+    UIView.animate(withDuration: 0.5) {
       
       self.horizontalEmojis.forEach {
         
-        if $0.hidden {
-          
-          $0.hidden = false
-          
-        } else {
-          
-          $0.hidden = true
-        }
+        $0.isHidden = !$0.isHidden
+
       }
     }
   }
   
-  @IBAction func settingsButtonTapped(sender: UIButton) {
+  @IBAction func settingsButtonTapped(_ sender: UIButton) {
     
-    UIView.animateWithDuration(0.5) {
+    UIView.animate(withDuration: 0.5) {
       
       self.emojis.forEach {
         
-        if $0.hidden {
-          
-          $0.hidden = false
-          
-        } else {
-          
-          $0.hidden = true
-        }
+        $0.isHidden = !$0.isHidden
       }
     }
   }

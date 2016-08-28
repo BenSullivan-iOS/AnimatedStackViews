@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,57 +15,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0ur-fV-nSm">
-                                <rect key="frame" x="314" y="86" width="266" height="58"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff0-B0-7Kp">
-                                        <rect key="frame" x="0.0" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="😀"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYi-5N-5Qu">
-                                        <rect key="frame" x="38" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="😊"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1K-FQ-HxA">
-                                        <rect key="frame" x="76" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="😀"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUY-cx-48e">
-                                        <rect key="frame" x="114" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="🤔"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nr-p4-Paj">
-                                        <rect key="frame" x="152" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="😕"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzw-Ul-P5b">
-                                        <rect key="frame" x="190" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="🙁"/>
-                                    </button>
-                                    <button opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM8-UK-5hp">
-                                        <rect key="frame" x="228" y="0.0" width="38" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <state key="normal" title="🙁"/>
-                                        <connections>
-                                            <action selector="happyEmojiPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbo-Ic-gV7"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-cj-Orp">
-                                <rect key="frame" x="542" y="28" width="38" height="464"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrD-WS-Fle">
-                                        <rect key="frame" x="0.0" y="0.0" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="🍭"/>
                                         <connections>
@@ -73,7 +28,6 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMw-V0-TN3">
-                                        <rect key="frame" x="0.0" y="58" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="😀"/>
                                         <connections>
@@ -81,63 +35,66 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-Fz-chR">
-                                        <rect key="frame" x="0.0" y="116" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="😊"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-FH-pe4">
-                                        <rect key="frame" x="0.0" y="174" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="😀"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aC4-TF-h36">
-                                        <rect key="frame" x="0.0" y="232" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="🤔"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J14-Bx-LSV">
-                                        <rect key="frame" x="0.0" y="290" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="😕"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOf-jT-9O4">
-                                        <rect key="frame" x="0.0" y="348" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="🙁"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9H-zf-LJr">
-                                        <rect key="frame" x="0.0" y="406" width="38" height="58"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                         <state key="normal" title="😡"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the lolly followed by the first smiley face." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b0-Oc-tvz">
-                                <rect key="frame" x="206" y="260" width="188" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="45Z-Ym-nMD"/>
-                                    <constraint firstAttribute="width" constant="188" id="RbW-CR-ai9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="oEd-X9-9Sr">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzy-jQ-hC3">
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <state key="normal" title="🍭"/>
+                                        <connections>
+                                            <action selector="htestpushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHK-Oc-Z3h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-qa-e8T">
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <state key="normal" title="😎"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rz-E6-sA2">
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <state key="normal" title="😎"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSV-DR-4ch">
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <state key="normal" title="😎"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-tp-Oye">
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                        <state key="normal" title="😎"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2b0-Oc-tvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3uu-Ub-J39"/>
-                            <constraint firstItem="0ur-fV-nSm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="DsZ-HK-4yP"/>
-                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JaI-em-qZN"/>
-                            <constraint firstItem="2b0-Oc-tvz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="amv-dA-T6d"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0ur-fV-nSm" secondAttribute="trailing" id="cto-pO-MqR"/>
-                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t4R-so-eYV"/>
-                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="leading" secondItem="0ur-fV-nSm" secondAttribute="trailing" id="vWO-vT-1BE"/>
+                            <constraint firstItem="oEd-X9-9Sr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IiP-qd-yjh"/>
+                            <constraint firstItem="oEd-X9-9Sr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1o-vM-pCf"/>
+                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nYO-ve-e3f"/>
+                            <constraint firstItem="Xeu-cj-Orp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="t4R-so-eYV"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="vWO-vT-1BE"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outletCollection property="emojis" destination="HMw-V0-TN3" collectionClass="NSMutableArray" id="ki3-8s-2cP"/>
@@ -147,17 +104,15 @@
                         <outletCollection property="emojis" destination="J14-Bx-LSV" collectionClass="NSMutableArray" id="5ux-DB-piE"/>
                         <outletCollection property="emojis" destination="E9H-zf-LJr" collectionClass="NSMutableArray" id="z4U-yY-Ivd"/>
                         <outletCollection property="emojis" destination="pOf-jT-9O4" collectionClass="NSMutableArray" id="U0c-1k-fdJ"/>
-                        <outletCollection property="horizontalEmojis" destination="Ff0-B0-7Kp" collectionClass="NSMutableArray" id="jLJ-Sj-QYi"/>
-                        <outletCollection property="horizontalEmojis" destination="uYi-5N-5Qu" collectionClass="NSMutableArray" id="saq-e6-rq5"/>
-                        <outletCollection property="horizontalEmojis" destination="N1K-FQ-HxA" collectionClass="NSMutableArray" id="FFc-wd-QuS"/>
-                        <outletCollection property="horizontalEmojis" destination="pUY-cx-48e" collectionClass="NSMutableArray" id="urM-ba-w5N"/>
-                        <outletCollection property="horizontalEmojis" destination="0nr-p4-Paj" collectionClass="NSMutableArray" id="fWG-5O-dnQ"/>
-                        <outletCollection property="horizontalEmojis" destination="Nzw-Ul-P5b" collectionClass="NSMutableArray" id="51U-6b-A9H"/>
+                        <outletCollection property="htest" destination="5O1-qa-e8T" collectionClass="NSMutableArray" id="Hbi-42-KLN"/>
+                        <outletCollection property="htest" destination="1rz-E6-sA2" collectionClass="NSMutableArray" id="VO2-ak-sgS"/>
+                        <outletCollection property="htest" destination="zSV-DR-4ch" collectionClass="NSMutableArray" id="cY9-yv-h3Y"/>
+                        <outletCollection property="htest" destination="Ud1-tp-Oye" collectionClass="NSMutableArray" id="iC3-rB-W05"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="398"/>
+            <point key="canvasLocation" x="225" y="-95"/>
         </scene>
     </scenes>
 </document>
